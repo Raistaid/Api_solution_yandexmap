@@ -33,12 +33,12 @@ class Map(QMainWindow):
 
 
     def initUI(self):
-        self.setGeometry(100, 100, 600, 600)
+        self.setGeometry(100, 100, 700, 700)
         self.setWindowTitle('Отображение карты')
         self.pixmap = QPixmap(self.map_file)
         self.image = QLabel(self)
         self.image.move(100, 100)
-        self.image.resize(300, 300)
+        self.image.resize(500, 500)
         self.image.setPixmap(self.pixmap)
 
 
